@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     void ShootArrow()
     {
         
-        Instantiate(arrow, transform.position + new Vector3(0, 1, 3) + transform.forward, Quaternion.identity);
+        Instantiate(arrow, transform.position + transform.forward, transform.rotation);
     }
     
 }
